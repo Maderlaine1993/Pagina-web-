@@ -1,4 +1,163 @@
-body{
-    background:rgb(0, 225, 255);
+/*Importamos la tipografia de la pagina web*/
+@import url('https://fonts.googleapis.com/css2? family = Source + Sans + Pro: ital, wght @ 1200 & display = swap');
 
+/*Lo implementamos en el html y en le etiqueta body*/
+html, body{
+    font-family: 'Source Sans Pro', sans-serif;
+    /*ancho total de la pantalla a html y body*/
+    width: 100%;
+    height:100%;
+    margin: 0;
+}
+
+/*Detallar del menu de barra*/
+#main{
+    width: 100%;
+    height: 10%;                       
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    background-color:rgb(95, 160, 117)
+}
+
+#main #opciones{
+    height: 100%;
+    width: 70%;  /*espacio que ocupara los apartados*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: cadetblue;
+}
+
+/*se quita el estilo de lista*/
+#main #opciones nav{
+    height: 100%;
+    width: 90% ;
+    margin: 0%;
+}
+
+#main #opciones nav ul{
+    height: 100%;
+    width: 100% !important;
+    margin: 0%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#main #opciones ul li{
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#main #opciones ul li:hover{
+    background-color: rgb(122, 196, 211);
+    cursor: pointer;
+}
+
+#main #opciones ul li a{ /*color de las letras del menu*/
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/*fondo de pantalla*/
+#base{
+    width: 100%;
+    height: 100%;
+}
+
+#base #inicio{
+    width: 100%;
+    height: 100%;
+}
+
+#base #inicio h1{
+    font-size: 6rem;    
+    text-decoration: none;
+    color: blue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#base #dpi{
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    background-color: aquamarine;
+}
+#base #dpi h1{
+    font-size: 2rem;    
+    height: 3%;
+    width: 100%;
+    text-decoration: none;
+    color: brown;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#base #dpi strong{ 
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: blue;
+}
+
+#base #antecedentes{
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    background-color: slateblue;
+}
+
+#base #antecedentes h1{
+    font-size: 2rem;    
+    height: 3%;
+    width: 100%;
+    text-decoration: none;
+    color: goldenrod;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#base #cajarural{
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    background-color:darksalmon;
+}
+
+#base #cajarural h1{
+    font-size: 2rem;    
+    height: 3%;
+    width: 100%;
+    text-decoration: none;
+    color: royalblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#base #cajarural span{
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: deeppink;
 }
